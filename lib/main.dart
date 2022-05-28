@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nrn_shivastuti/homepage.dart';
+import 'package:nrn_shivastuti/splash_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +19,9 @@ class MyApp extends StatelessWidget {
       // dark theme enabled
       theme: ThemeData(
         brightness: Brightness.dark,
+        fontFamily: GoogleFonts.poppins().fontFamily,
       ),
-      home: const Homepage(),
+      home: MySplashScreen(),
     );
   }
 }
