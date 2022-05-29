@@ -147,7 +147,9 @@ class _HomepageState extends State<Homepage> {
         ),
       ),
       appBar: AppBar(
-        title: const Text("Shiva Bhajan"),
+        title: const Text(
+          "Shiva Bhajan",
+        ),
         centerTitle: true,
       ),
       body: SingleChildScrollView(

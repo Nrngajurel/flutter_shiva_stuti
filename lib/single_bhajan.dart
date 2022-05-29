@@ -36,7 +36,12 @@ class _SingleBhajanState extends State<SingleBhajan> {
   }
 
   pause() async {
-    await audioPlayer.pause();
+    int result = await audioPlayer.pause();
+    if (result == 1) {
+      setState(() {
+        isPlaying = false;
+      });
+    }
   }
 
   backward() async {
@@ -79,7 +84,6 @@ class _SingleBhajanState extends State<SingleBhajan> {
                   height: height * 0.7,
                   width: width * 0.9,
                   fit: BoxFit.cover,
-                  alignment: Alignment.topCenter,
                 ),
               ),
               SizedBox(

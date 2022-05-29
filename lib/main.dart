@@ -17,9 +17,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       // dark theme enabled
+
       theme: ThemeData(
+        // primarySwatch: Colors.blue,
         brightness: Brightness.dark,
-        fontFamily: GoogleFonts.poppins().fontFamily,
+        fontFamily: GoogleFonts.kalam().fontFamily,
       ),
       home: MySplashScreen(),
     );
